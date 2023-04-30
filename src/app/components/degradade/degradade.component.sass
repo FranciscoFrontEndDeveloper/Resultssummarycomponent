@@ -1,0 +1,31 @@
+@import '../../../styles'
+
+.degradadeContainer
+ background: #4E21CA
+ background: linear-gradient(0deg, #2E2BE9, #7857FF)
+ min-height: 300px
+ display: flex
+ flex-direction: column
+ justify-content: center
+ gap: 30px
+ border-bottom-right-radius: 30px
+ border-bottom-left-radius: 30px
+ align-items: center
+ p,h3
+  text-align: center
+  @include fontStyles($color: $Lightlavender )
+ h3
+  @include fontStyles($color: $White )
+ p:nth-child(4)
+  padding: 0 20%
+ div
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  background: linear-gradient(0deg, $Persianbluecircle, $Violetbluecircle)
+  span
+   @include fontStyles($color: $White )
