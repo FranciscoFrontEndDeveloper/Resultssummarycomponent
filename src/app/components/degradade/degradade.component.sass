@@ -11,21 +11,22 @@
  border-bottom-right-radius: 30px
  border-bottom-left-radius: 30px
  align-items: center
- p,h3
-  text-align: center
-  @include fontStyles($color: $Lightlavender )
+ padding: 20px 0
+ p
+  @include fontStyles($color: $Lightlavender, $fontSize: 14px, $fontWeiht: $fontWeiht)
+  width: 65%
  h3
-  @include fontStyles($color: $White )
+  @include fontStyles($color: $White, $fontSize: 20px, $fontWeiht: 500  )
  p:nth-child(4)
-  padding: 0 20%
+  padding: 0 0%
  div
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
-  width: 100px
-  height: 100px
+  width: 120px
+  height: 120px
   border-radius: 50%
   background: linear-gradient(0deg, $Persianbluecircle, $Violetbluecircle)
   span
-   @include fontStyles($color: $White )
+   @include fontStyles($color: $White, $fontSize: 44px, $fontWeiht: 700  )

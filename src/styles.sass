@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style 
 @import '~normalize.css'
-
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap')
 //Primary
 
 $Lightred: hsl(0, 100%, 67%)
@@ -22,9 +22,15 @@ $Paleblue: hsl(221, 100%, 96%)
 $Lightlavender: hsl(241, 100%, 89%)
 $Darkgrayblue: hsl(224, 30%, 27%)
 
+$fontSize: 18px
+$fontWeiht: 500
 *
  margin: 0
  padding: 0
+ font-family: 'Hanken Grotesk', sans-serif
 
-@mixin fontStyles($color)
+@mixin fontStyles($color,$fontSize,$fontWeiht )
  color: $color
+ font-size: $fontSize
+ font-weight: $fontWeiht
+ text-align: center
